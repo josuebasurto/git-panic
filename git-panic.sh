@@ -32,6 +32,6 @@ echo "---"
 
 # 5. Envía la notificación de emergencia a Slack.
 # Usa curl para enviar una petición POST con el mensaje JSON.
-curl -X POST -H 'Content-type: application/json' --data "{\"text\":\"Josue ha detonado el script de evacuación. Su codigo esta en la rama: \`$BRANCH_NAME\`\\. Se reportara en caso de que todo salga bien.\"}" $SLACK_WEBHOOK_URL
+curl -X POST -H 'Content-type: application/json' --data "{\"text\":\"Se ha detonado el script de evacuación. Su codigo esta en la rama: \`$BRANCH_NAME\`\\. Se reportara en caso de que todo salga bien.\"}" $SLACK_WEBHOOK_URL
 
 echo "Notificación de emergencia enviada a Slack. ¡Ahora puedes evacuar!"
